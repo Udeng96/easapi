@@ -1,0 +1,117 @@
+/*evtReOccurPopup style*/
+.modal_popup.evt_reoccur_popup .modal_popup_frame {
+  width: 534px;
+  height: 343px;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_header .popup_title.type_event_reoccur::before {
+  background: url("../../../image/dark/page/event/icon/icon_title_pop_event_reOccurred.png") no-repeat;
+  background-size: 100%;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 32px;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .popup_block {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 31px;
+  margin-bottom: 9px;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_title {
+  width: 93px;
+  font-family: "SCDreamL";
+  font-size: 11px;
+  color: #b9babd;
+  padding-left: 10px;
+  position: relative;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_title::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #e87f0e;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_box {
+  display: flex;
+  align-items: center;
+  width: 376px;
+  height: 100%;
+  border-radius: 5px;
+  border: solid 1px #4a4d54;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_box .event_info_text {
+  font-family: "SCDreamR";
+  font-size: 11px;
+  color: #fff;
+  padding: 0 12px;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_box.no_border {
+  border-color: transparent;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_box .datepicker_area {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_box .datepicker_area .calendar_input_box {
+  width: 144px;
+  height: 31px;
+  position: relative;
+  margin-right: 3px;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_box .datepicker_area .calendar_input_box::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 31px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #33363d;
+  background-image: url("../../../image/dark/page/statistics/icon/icon_calendar.png");
+  background-repeat: no-repeat;
+  background-size: 15px 16px;
+  background-position: center;
+  border: 1px solid #4a4d54;
+  border-left: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_box .datepicker_area .calendar_input_box:hover::after {
+  border-color: #4a4d54;
+  background-color: #3e424a;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_box .datepicker_area .calendar_input_box:hover .calendar_input {
+  border-color: #4a4d54;
+  background-color: #26282e;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_box .datepicker_area .calendar_input_box .calendar_input {
+  position: relative;
+  width: 114px;
+  height: 31px;
+  border-radius: 5px 0 0 5px;
+  border: solid 1px #4a4d54;
+  background-color: #1c1d21;
+  font-family: "SCDreamR";
+  font-size: 11px;
+  text-align: left;
+  color: #fff;
+  padding-left: 12px;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_box .datepicker_area .calendar_input_box .calendar_input:focus {
+  border-color: #e87f0e;
+}
+.modal_popup.evt_reoccur_popup .modal_popup_frame .modal_popup_body .btn_group {
+  display: flex;
+  justify-content: center;
+  height: 37px;
+  margin-top: 13px;
+}
+

@@ -1,0 +1,55 @@
+/*event style*/
+.event_main_title {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 19px;
+  font-family: "SCDreamM";
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+  font-size: 15px;
+  letter-spacing: -0px;
+  color: #fff;
+  position: relative;
+}
+.event_main_title::before {
+  top: -6px;
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 19px;
+  margin-right: 7px;
+}
+.event_main_title.type_event_list::before {
+  background: url("../../../image/dark/page/event/icon/icon_title_eventList.png") no-repeat;
+  background-size: 100%;
+}
+.event_main_title.type_sensor_standard::before {
+  background: url("../../../image/dark/page/event/icon/icon_title_sensor_standard.png") no-repeat;
+  background-size: 100%;
+}
+.event_main_title.type_sensor_standard::before {
+  background: url("../../../image/dark/page/event/icon/icon_title_sensor_standard.png") no-repeat;
+  background-size: 100%;
+}
+
+.event_main_title.type_hourtime_chart{
+  top: -5px !important;
+}
+.event_main_title.type_hourtime_chart::before {
+  background: url("../../../image/dark/page/event/icon/icon_title_hourTime_chart.png") no-repeat;
+  background-size: 100%;
+}
+.event_main_title.type_situation::before {
+  background: url("../../../image/dark/page/event/icon/icon_title_situation_disseminate.png") no-repeat;
+  background-size: 100%;
+}
+.event_main_title.type_history::before {
+  background: url("../../../image/dark/page/event/icon/icon_title_disseminate_history.png") no-repeat;
+  background-size: 100%;
+}
+.event_main_title.type_message::before {
+  background: url("../../../image/dark/page/event/icon/icon_title_message_disseminate.png") no-repeat;
+  background-size: 100%;
+}
+

@@ -1,0 +1,121 @@
+/*common gisArea style*/
+.gis_area {
+  background-color: #202229;
+  position: absolute;
+  height: 1061px;
+}
+.gis_area .btn_gis_back {
+  width: 45px;
+  height: 47px;
+  background: url("../../image/dark/page/main/btn/btn_gis_back_normal.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 15px;
+  left: 22px;
+}
+.gis_area .btn_gis_back:hover {
+  background-image: url("../../image/dark/page/main/btn/btn_gis_back_hover.png");
+}
+.gis_area .btn_map_setting_frame {
+  display: flex;
+  position: absolute;
+  gap: 12px;
+  top: 18px;
+  right: 28px;
+  z-index: 10;
+}
+.gis_area .btn_map_setting_frame .btn_map_setting_area {
+  position: relative;
+}
+.gis_area .btn_map_setting_frame .btn_map_setting_area .btn_map_icon_setting {
+  width: 148px;
+  height: 41px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  background: #16171f;
+  font-family: "SCDreamM";
+  font-size: 13px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fff;
+  padding-left: 35px;
+  border: solid 1px rgba(206, 221, 242, 0.2);
+  border-radius: 6px;
+}
+.gis_area .btn_map_setting_frame .btn_map_setting_area .btn_map_icon_setting::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 17px;
+  background: url("../../image/dark/page/main/icon/icon_gis_btn_iconSetting.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  opacity: 0.75;
+}
+.gis_area .btn_map_setting_frame .btn_map_setting_area .btn_map_icon_setting:hover {
+  border-color: rgba(206, 221, 242, 0.4);
+  background: #2e3239;
+}
+.gis_area .btn_map_setting_frame .btn_map_setting_area .btn_map_icon_setting:hover::before {
+  opacity: 1;
+}
+.gis_area .btn_map_setting_frame .btn_map_setting_area .btn_map_icon_setting.active {
+  border: solid 1px rgba(255, 153, 0, 0.4);
+  background-image: linear-gradient(to left, #c25b1f, #d9ab21);
+}
+.gis_area .btn_map_setting_frame .btn_map_setting_area .btn_map_icon_setting.active::before {
+  opacity: 1;
+}
+.gis_area .btn_map_setting_frame .btn_map_setting_area .btn_map_icon_setting.active:hover {
+  border: solid 1px rgba(255, 153, 0, 0.2);
+  background-image: linear-gradient(to left, #d47730, #e8c55c);
+}
+.gis_area .btn_map_setting_frame .btn_map_setting_area .select_map_icon_area {
+  width: 171px;
+  height: auto;
+  border-radius: 9px;
+  border: solid 1px rgba(229, 249, 255, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to top, #1e2126, #2d3036);
+  padding: 22px 0 22px 18px;
+  position: absolute;
+  top: 47px;
+  right: 0;
+  display: none;
+}
+
+.gis_area .btn_map_setting_frame .btn_map_setting_area .select_map_icon_area.active {
+  display: block;
+}
+.gis_area .btn_map_setting_frame .btn_map_type_group {
+  display: flex;
+  align-items: center;
+  width: 85px;
+  height: 41px;
+  border-radius: 6px;
+  border: solid 1px rgba(206, 221, 242, 0.2);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #16171F;
+  padding: 0 3px;
+}
+.gis_area .btn_map_setting_frame .btn_map_type_group .btn_map_type {
+  width: 39px;
+  height: 34px;
+  border-radius: 4px;
+  font-family: "SCDreamEB";
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  font-size: 13px;
+  color: #868a91;
+}
+.gis_area .btn_map_setting_frame .btn_map_type_group .btn_map_type:hover {
+  color: #fc8403;
+  background-color: rgba(252, 132, 3, 0.2);
+}
+.gis_area .btn_map_setting_frame .btn_map_type_group .btn_map_type.active {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(330deg, #c25c1f 10%, #ebbc33 90%);
+}
+

@@ -1,0 +1,191 @@
+/*selectEvtTargetPopup*/
+.modal_popup.select_evt_target_popup.type_wide .modal_popup_frame {
+  width: 1372px;
+  height: 747px;
+}
+.modal_popup.select_evt_target_popup.type_wide .modal_popup_frame .modal_popup_body .tree_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 9px;
+}
+.modal_popup.select_evt_target_popup.type_wide .modal_popup_frame .modal_popup_body .tree_wrap .tree_area {
+  width: 331px;
+  height: 565px;
+  margin-bottom: 0;
+  padding: 20px 0 0 24px;
+}
+.modal_popup.select_evt_target_popup.type_wide .modal_popup_frame .modal_popup_body .tree_wrap .gis_area {
+  width: 960px;
+  height: 565px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame {
+  width: 442px;
+  height: 679px;
+}
+
+.modal_popup.select_evt_target_popup.active{
+  display: block;
+  transition: 1.5s;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_header .popup_title.type_spread_detail::before {
+  background: url("../../../image/dark/page/event/icon/icon_title_pop_eventDisseminateMangement.png") no-repeat;
+  background-size: 100%;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 33px;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .tree_area {
+  width: 100%;
+  height: 289px;
+  border-radius: 7px;
+  background-color: #2d3036;
+  margin-bottom: 13px;
+  padding: 20px 18px 16px 24px;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .tree_area .tree_in {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .target_area {
+  width: 100%;
+  height: 127px;
+  border-radius: 7px;
+  background-color: #31343b;
+  margin-bottom: 13px;
+  padding: 12px 18px 16px 16px;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .target_area_in {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .target_area .target_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 156px;
+  height: 24px;
+  padding: 0 7px;
+  margin-right: 4px;
+  margin-bottom: 5px;
+  float: left;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .target_area .target_box .target_text {
+  max-width: 125px;
+  font-family: "SCDreamR";
+  font-size: 11px;
+  letter-spacing: -0px;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .target_area .target_box .btn_target_delete {
+  width: 16px;
+  height: 17px;
+  background: url("../../../image/dark/page/event/btn/btn_delete_phone_normal.png") no-repeat;
+  background-size: 100%;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .target_area .target_box .btn_target_delete:hover {
+  background: url("../../../image/dark/page/event/btn/btn_delete_phone_hover.png") no-repeat;
+  background-size: 100%;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .popup_block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 21px;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_title {
+  font-family: "SCDreamL";
+  font-size: 13px;
+  color: #b9babd;
+  padding-left: 10px;
+  position: relative;
+  margin-right: 14px;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .popup_block .event_info_title::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #e87f0e;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .popup_block .insert_area {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .popup_block .insert_area .target_input {
+  height: 33px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background-color: #16171f;
+  font-family: "SCDreamR";
+  font-size: 11px;
+  color: #fff;
+  padding: 0 12px;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .popup_block .insert_area .target_input.type_name {
+  width: 96px;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .popup_block .insert_area .target_input.type_phone {
+  width: 201px;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .popup_block .insert_area .target_input:focus {
+  border-color: rgba(181, 90, 20, 0.75);
+  background-color: rgba(22, 23, 31, 0.75);
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .popup_block .insert_area .target_input::placeholder {
+  color: #969aa3;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .popup_block .insert_area .btn_add {
+  width: 66px;
+  height: 33px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(232, 232, 232, 0.2);
+  background-color: #496ad6;
+  font-family: "SCDreamM";
+  font-size: 13px;
+  letter-spacing: -1px;
+  text-align: left;
+  color: #fff;
+  padding-left: 27px;
+  position: relative;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .popup_block .insert_area .btn_add:hover {
+  background-color: #5f7fe8;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .popup_block .insert_area .btn_add::before {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: url("../../../image/dark/page/event/btn/btn_pop_phoneAdd.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+.modal_popup.select_evt_target_popup .modal_popup_frame .modal_popup_body .btn_group {
+  justify-content: center;
+  margin-top: 13px;
+}
+

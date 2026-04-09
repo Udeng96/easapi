@@ -1,0 +1,32 @@
+/*evtSpreadPopup style*/
+.modal_popup.evt_spread_popup.active{
+  display: block;
+}
+
+.modal_popup.evt_spread_popup .modal_popup_frame {
+  width: 480px;
+  height: 283px;
+}
+.modal_popup.evt_spread_popup .modal_popup_frame .modal_popup_header .popup_title.type_event_complete::before {
+  background: url("../../../image/dark/page/event/icon/icon_title_pop_disseminateComplete.png") no-repeat;
+  background-size: 100%;
+}
+.modal_popup.evt_spread_popup .modal_popup_frame .modal_popup_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal_popup.evt_spread_popup .modal_popup_frame .modal_popup_body .modal_message {
+  font-family: "SCDreamR";
+  letter-spacing: -0px;
+  color: #fff;
+  margin: 62px 0 50px 0;
+  font-size: 16px;
+}
+.modal_popup.evt_spread_popup .modal_popup_frame .modal_popup_body .modal_message span {
+  font-family: "SCDreamM";
+  color: #f07422;
+  margin-left: 4px;
+  margin-right: 3px;
+}
+

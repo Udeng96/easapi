@@ -1,0 +1,19 @@
+/*statistics scroll style*/
+.chart_frame::-webkit-scrollbar {
+    background-color: transparent;
+    height: 0.43vh;
+}
+
+.chart_frame::-webkit-scrollbar-track {
+    background-color: rgba(3, 4, 8, 0.5);
+    border-radius: 0.09vw;
+}
+
+.chart_frame::-webkit-scrollbar-thumb {
+    background-color: #5e6266;
+    border-radius: 0.09vw;
+}
+
+.chart_frame::-webkit-scrollbar-thumb:hover {
+    background-color: #83898f;
+}

@@ -1,0 +1,16 @@
+/*tooltip style*/
+.tooltip_text {
+  width: auto;
+  height: auto;
+  border-radius: 2px;
+  border: solid 1px #b55a14;
+  background-color: #1a1b21;
+  color: #cfe2e5;
+  font-family: "NotoSansCJKR";
+  font-size: 8px;
+  position: absolute;
+  top: 24px;
+  z-index: 1;
+  padding: 2px 6px;
+  display: none;
+}

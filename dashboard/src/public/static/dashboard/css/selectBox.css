@@ -1,0 +1,174 @@
+/*selectBox style*/
+.selectric-wrapper {
+    margin: 0;
+}
+
+.selectric-select_sensor .selectric-items ul {
+    padding: 0;
+}
+
+.selectric-select_sensor .button:after {
+    border-top-color: transparent;
+    width: 0;
+    height: 0;
+    border: none;
+}
+
+.selectric-select_sensor .selectric-items .selectric-scroll {
+    overflow-x: hidden;
+}
+
+/*select_sensor*/
+.selectric-wrapper.selectric-select_sensor {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    z-index: 5;
+}
+
+.selectric-select_sensor .selectric {
+    width: 139px;
+    height: 33px;
+    font-family: "SCDreamR";
+    font-size: 11px;
+    text-align: left;
+    color: #fff;
+    letter-spacing: -0px;
+    border: solid 1px #44484f;
+    background-color: #33363d;
+    border-radius: 4px;
+    padding-left: 0;
+    margin: 0;
+    cursor: pointer;
+    float: left;
+}
+
+.selectric-select_sensor .selectric:hover {
+    border: solid 1px #4f545c;
+    background-color: #40434a;
+}
+
+.selectric-select_sensor.selectric-open .selectric {
+    border-color: #b55a14;
+    background-color: #1a1b21;
+}
+
+.selectric-select_sensor .selectric-items {
+    width: 139px !important;
+    max-height: 151px;
+    border-radius: 6px;
+    margin: 2px 0 0 0;
+    border: solid 1px #b55a14;
+    background-color: #1a1b21;
+    padding: 6px 0 6px 6px;
+    overflow-y: scroll;
+}
+
+.selectric-select_sensor .selectric-items li {
+    font-family: "SCDreamR";
+    font-size: 11px;
+    text-align: left;
+    color: #fff;
+    letter-spacing: -0px;
+    line-height: 28px;
+    border-radius: 4px;
+    padding: 0 9px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 120px;
+    height: 28px;
+}
+
+.selectric-select_sensor .selectric-items li:hover {
+    width: 120px;
+    height: 28px;
+    font-family: "SCDreamR";
+    font-size: 11px;
+    color: #fff;
+    background-color: rgba(252, 122, 35, 0.1);
+}
+
+.selectric-select_sensor .selectric-items li.selected,
+.selectric-select_sensor .selectric-items li.selected:hover {
+    width: 120px;
+    height: 28px;
+    font-family: "SCDreamR";
+    font-size: 11px;
+    color: #fc8905;
+    background-color: rgba(201, 109, 4, 0.25);
+}
+
+.selectric-select_sensor .selectric .label {
+    font-family: "SCDreamL";
+    font-size: 11px;
+    color: #fff;
+    text-align: left;
+    padding: 0 31px 0 15px;
+    line-height: 33px;
+    height: 33px;
+}
+
+.selectric-select_sensor .button {
+    width: 10px;
+    height: 9px;
+    background: url("../../../../public/static/image/dark/page/main/img/img_arrow_dropdown.png") no-repeat;
+    background-size: 100%;
+    top: 13px;
+    right: 14px;
+}
+
+/*selectric scroll style*/
+.selectric-select_sensor .selectric-items::-webkit-scrollbar {
+    background-color: transparent;
+    width: 4px;
+}
+
+.selectric-select_sensor .selectric-items::-webkit-scrollbar-track {
+    background-color: rgba(3, 4, 8, 0.5);
+}
+
+.selectric-select_sensor .selectric-items::-webkit-scrollbar-thumb {
+    background-color: #5e6266;
+    border-radius: 1px;
+}
+
+.selectric-select_sensor::-webkit-scrollbar-thumb:hover {
+    background-color: #83898f;
+}
+
+.selectric-items .selectric-scroll::-webkit-scrollbar,
+.selectric-items .selectric-scroll::-webkit-scrollbar-track,
+.selectric-items .selectric-scroll::-webkit-scrollbar-thumb{
+    width: 4px;
+    background-color: transparent;
+}
+
+.select_sensor_tooltip {
+    width: 102px;
+    padding: 2px 11px;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    white-space: nowrap;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.27);
+    border: solid 1px #b55a14;
+    background-color: #1a1b21;
+    font-family: "SCDreamR";
+    font-size: 11px;
+    letter-spacing: -0px;
+    color: #fff;
+    line-height: 20px;
+    position: absolute;
+    top: 25px;
+    left: 22px;
+    z-index: 1;
+    display: none;
+}
+
+.selectric-select_sensor .selectric-items li{
+    position: relative;
+    overflow: unset;
+}
+.selectric-select_sensor .selectric-items li:hover .select_sensor_tooltip{
+    display: block;
+}

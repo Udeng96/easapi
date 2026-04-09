@@ -1,0 +1,96 @@
+/*gisLocArea style*/
+.gis_loc_area {
+  width: 1192px;
+  height: 873px;
+  position: absolute;
+  top: 116px;
+  left: 302px;
+}
+
+.gis_loc_icon {
+  width: 42px;
+  height: 75px;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.gis_loc_icon .gis_sensor_popup {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s;
+}
+.gis_loc_icon:hover .gis_sensor_popup {
+  visibility: visible;
+  opacity: 1;
+}
+.gis_loc_icon.state_normal {
+  background: url("../../../../public/static/image/dark/page/main/img/img_gis_location_normality_normal.png") no-repeat;
+  background-size: 100%;
+}
+.gis_loc_icon.state_normal:hover {
+  background: url("../../../../public/static/image/dark/page/main/img/img_gis_location_normality_hover.png") no-repeat;
+  background-size: 100%;
+}
+.gis_loc_icon.state_attention {
+  background: url("../../../../public/static/image/dark/page/main/img/img_gis_location_attention_normal.png") no-repeat;
+  background-size: 100%;
+}
+.gis_loc_icon.state_attention:hover {
+  background: url("../../../../public/static/image/dark/page/main/img/img_gis_location_attention_hover.png") no-repeat;
+  background-size: 100%;
+}
+
+.gis_loc_icon.state_attention.active {
+  background: url("../../../../public/static/image/dark/page/main/img/img_gis_location_attention_hover.png") no-repeat;
+  background-size: 100%;
+}
+.gis_loc_icon.state_serious {
+  background: url("../../../../public/static/image/dark/page/main/img/img_gis_location_serious_normal.png") no-repeat;
+  background-size: 100%;
+}
+.gis_loc_icon.state_serious:hover {
+  background: url("../../../../public/static/image/dark/page/main/img/img_gis_location_serious_hover.png") no-repeat;
+  background-size: 100%;
+}
+.gis_loc_icon.state_serious.active {
+  background: url("../../../../public/static/image/dark/page/main/img/img_gis_location_serious_hover.png") no-repeat;
+  background-size: 100%;
+}
+.gis_loc_icon.state_caution {
+  background: url("../../../../public/static/image/dark/page/main/img/img_gis_location_caution_normal.png") no-repeat;
+  background-size: 100%;
+}
+.gis_loc_icon.state_caution:hover {
+  background: url("../../../../public/static/image/dark/page/main/img/img_gis_location_caution_hover.png") no-repeat;
+  background-size: 100%;
+}
+.gis_loc_icon.state_alert {
+  background: url("../../../../public/static/image/dark/page/main/img/img_gis_location_alert_normal.png") no-repeat;
+  background-size: 100%;
+}
+.gis_loc_icon.state_alert:hover {
+  background: url("../../../../public/static/image/dark/page/main/img/img_gis_location_alert_hover.png") no-repeat;
+  background-size: 100%;
+}
+.gis_loc_icon.loc_1 {
+  top: 0;
+  left: 10%;
+}
+.gis_loc_icon.loc_2 {
+  top: 0;
+  left: 40%;
+}
+.gis_loc_icon.loc_3 {
+  top: 0;
+  left: 70%;
+}
+.gis_loc_icon.loc_4 {
+  top: 30%;
+  left: 25%;
+}
+.gis_loc_icon.loc_5 {
+  top: 30%;
+  left: 55%;
+}
+
