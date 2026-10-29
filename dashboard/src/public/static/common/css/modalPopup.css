@@ -1,0 +1,158 @@
+/*modalPopup style*/
+.modal_popup {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 600;
+  display: none;
+}
+.modal_popup .modal_popup_frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.modal_popup .modal_popup_frame .modal_popup_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 63px;
+  position: relative;
+  padding: 5px 26px 0 23px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.2), inset 0px 1px 0 0 rgba(232, 232, 232, 0.18);
+  background-image: linear-gradient(316deg, #2e3036 56%, #2b2e33 44%);
+}
+.modal_popup .modal_popup_frame .modal_popup_header .popup_title {
+  font-family: "SCDreamM";
+  font-size: 19px;
+  letter-spacing: -0px;
+  text-align: left;
+  color: #f5f8ff;
+  position: relative;
+  padding-left: 32px;
+}
+.modal_popup .modal_popup_frame .modal_popup_header .popup_title::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 27px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.modal_popup .modal_popup_frame .modal_popup_header .btn_popup_close {
+  width: 18px;
+  height: 18px;
+  background: url("../../image/dark/common/btn/btn_close_normal.png") no-repeat;
+  background-size: 100%;
+}
+.modal_popup .modal_popup_frame .modal_popup_header .btn_popup_close:hover {
+  background: url("../../image/dark/common/btn/btn_close_hover.png") no-repeat;
+  background-size: 100%;
+}
+.modal_popup .modal_popup_frame .modal_popup_body {
+  width: 100%;
+  height: calc(100% - 63px);
+  position: relative;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-image: linear-gradient(346deg, #21252b 9%, #16181f 91%);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group {
+  display: flex;
+  height: 37px;
+  gap: 18px;
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group .btn_cancel {
+  width: auto;
+  font-family: "SCDreamR";
+  font-size: 11px;
+  letter-spacing: -0px;
+  color: #c8c9cb;
+  text-decoration: underline;
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group .btn_cancel:hover {
+  color: #fff;
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group .btn_cancel:active {
+  color: #2bb6cf;
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group .btn_release {
+  width: 105px;
+  height: 37px;
+  border-radius: 17px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(232, 232, 232, 0.18);
+  background-color: #36a2d9;
+  font-family: "SCDreamM";
+  font-size: 15px;
+  letter-spacing: -1px;
+  color: #fff;
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group .btn_release:hover {
+  background-color: #46bdfa;
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group .btn_confirm {
+  width: 105px;
+  height: 37px;
+  border-radius: 17px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(232, 232, 232, 0.18);
+  background-color: #f07422;
+  font-family: "SCDreamM";
+  font-size: 15px;
+  letter-spacing: -1px;
+  color: #fff;
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group .btn_confirm:hover {
+  background-color: #ff8b2b;
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group .btn_evt_reoccur {
+  width: 150px;
+  height: 37px;
+  border-radius: 17px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(232, 232, 232, 0.18);
+  background-color: #36a2d9;
+  font-family: "SCDreamM";
+  font-size: 15px;
+  letter-spacing: -1px;
+  color: #fff;
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group .btn_evt_reoccur:hover {
+  background-color: #46bdfa;
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group .btn_spread {
+  width: 127px;
+  height: 37px;
+  border-radius: 17px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(232, 232, 232, 0.18);
+  background-color: #f07422;
+  font-family: "SCDreamM";
+  font-size: 15px;
+  letter-spacing: -1px;
+  color: #fff;
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group .btn_spread:hover {
+  background-color: #ff8b2b;
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group .btn_apply {
+  width: 105px;
+  height: 37px;
+  border-radius: 17px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 rgba(232, 232, 232, 0.18);
+  background-color: #f07422;
+  font-family: "SCDreamM";
+  font-size: 15px;
+  letter-spacing: -1px;
+  color: #fff;
+}
+.modal_popup .modal_popup_frame .modal_popup_body .btn_group .btn_apply:hover {
+  background-color: #ff8b2b;
+}
+

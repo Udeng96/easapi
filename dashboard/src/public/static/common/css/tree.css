@@ -1,0 +1,60 @@
+/*sim tree custom*/
+
+.react-checkbox-tree label{
+    margin-bottom: 4px !important;
+}
+
+.rct-title{
+    font-size: 13px;
+    font-family: "SCDreamR";
+    color: #f7f7f7;
+}
+
+.rct-collapse *,
+.rct-checkbox *,
+.rct-node-icon *{
+    padding: 2px !important;
+}
+
+.rct-node-icon{
+    display: none !important;
+}
+.sim-tree a {
+    font-size: 13px;
+    font-family: "SCDreamR";
+    color: #f7f7f7;
+}
+
+.sim-tree .sim-tree-checkbox {
+    border: solid 1px #f07422;
+    background-color: transparent;
+    width: 13px;
+    height: 14px;
+    max-height: 18px;
+    border-radius: 4px;
+}
+
+.sim-tree .sim-tree-checkbox.sim-tree-semi,
+.sim-tree .sim-tree-checkbox.checked {
+    border-color: #f07422;
+    background-color: #f07422;
+}
+
+.sim-tree .sim-icon-d:before {
+    border-top-color: #f07422;
+}
+
+.sim-tree .sim-icon-r:before {
+    border-left-color: #f07422;
+}
+
+.sim-tree li.disabled>a .sim-tree-checkbox {
+    border: solid 1px #b2b3b8;
+}
+
+.sim-tree .sim-tree-checkbox.sim-tree-semi:after {
+    width: 8px;
+    height: 2px;
+    top: 6px;
+    left: 3px;
+}

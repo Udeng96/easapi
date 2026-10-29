@@ -1,0 +1,118 @@
+/*pagination style*/
+.paging_wrap {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 21px;
+}
+
+.paging_wrap ul {
+    display: flex;
+}
+
+.paging_wrap ul li {
+    float: left;
+    margin: 0 2px;
+}
+
+.paging_wrap ul li a {
+    width: 20px;
+    height: 21px;
+    font-family: "SCDreamR";
+    font-size: 10px;
+    background-color: #262a30;
+    color: #fff;
+    float: left;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all .25s;
+    cursor: pointer;
+}
+
+.paging_wrap ul li a:hover {
+    border-color: #3d444d;
+    background-color: #30353d;
+    color: #e87f0e;
+}
+
+.paging_wrap ul li a.active,
+.paging_wrap ul li a:focus {
+    border: solid 1px #e87f0e;
+    background-color: #4b3a29;
+    color: #fff;
+
+}
+
+.paging_wrap ul li a.btn_foremost:active,
+.paging_wrap ul li a.btn_foremost:focus,
+.paging_wrap ul li a.btn_prev:active,
+.paging_wrap ul li a.btn_prev:focus,
+.paging_wrap ul li a.btn_next:active,
+.paging_wrap ul li a.btn_next:focus,
+.paging_wrap ul li a.btn_last:active,
+.paging_wrap ul li a.btn_last:focus {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.paging_wrap ul li .btn_prev {
+    background: url("../../image/dark/page/event/btn/btn_pop_eventHistory_prev_normal.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_prev:hover {
+    background: url("../../image/dark/page/event/btn/btn_pop_eventHistory_prev_hover.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_prev.dimmed {
+    background: url("../../image/dark/page/event/btn/btn_pop_eventHistory_prev_disable.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_foremost {
+    background: url("../../image/dark/page/event/btn/btn_pop_eventHistory_theForemost_normal.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_foremost:hover {
+    background: url("../../image/dark/page/event/btn/btn_pop_eventHistory_theForemost_hover.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_foremost.dimmed {
+    background: url("../../image/dark/page/event/btn/btn_pop_eventHistory_theForemost_disable.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_next {
+    background: url("../../image/dark/page/event/btn/btn_pop_eventHistory_next_normal.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_next:hover {
+    background: url("../../image/dark/page/event/btn/btn_pop_eventHistory_next_hover.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_next.dimmed {
+    background: url("../../image/dark/page/event/btn/btn_pop_eventHistory_next_disable.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_last {
+    background: url("../../image/dark/page/event/btn/btn_pop_eventHistory_theLast_normal.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_last:hover {
+    background: url("../../image/dark/page/event/btn/btn_pop_eventHistory_theLast_hover.png") no-repeat;
+    background-size: 100%;
+}
+
+.paging_wrap ul li .btn_last.dimmed {
+    background: url("../../image/dark/page/event/btn/btn_pop_eventHistory_theLast_disable.png") no-repeat;
+    background-size: 100%;
+}

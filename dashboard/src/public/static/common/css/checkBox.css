@@ -1,0 +1,209 @@
+/*checkBox style*/
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 15px;
+    width: 14px;
+    border-radius: 4px;
+    border: solid 1px #b2b3b8;
+    background-color: transparent;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+    background-color: #f07422;
+    border-color: #f07422;
+    border-radius: 4px;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 9px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* The container */
+.container {
+    margin: 0;
+    width: auto;
+    height: 0px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container .check_name {
+    width: auto;
+    height: 13px;
+    font-family: "SCDreamR";
+    font-size: 13px;
+    text-align: left;
+    color: #f7f7f7;
+    margin: 0 0 0 9px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.container .check_name::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.container .check_name.type_cctv_ptz::before {
+    background: url("../../image/dark/page/main/icon/icon_map_small_cctv_ptz.png") no-repeat;
+    background-size: 100%;
+}
+
+.container .check_name.type_cctv_fixed::before {
+    background: url("../../image/dark/page/main/icon/icon_map_small_cctv_fixed.png") no-repeat;
+    background-size: 100%;
+}
+
+.container .check_name.type_tidelevel::before {
+    background: url("../../image/dark/page/main/icon/icon_map_tideLevel.png") no-repeat;
+    background-size: 100%;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* On mouse-over, add a grey background color */
+.container input:checked~.check_name {
+    color: #fff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.check_box {
+    width: 100%;
+    height: 19px;
+    margin-bottom: 5px;
+}
+
+.event_box {
+    margin-bottom: 0;
+    padding-top: 1px;
+    padding-left: 7px;
+}
+
+.event_box .checkmark {
+    position: absolute;
+    top: 2px;
+    left: -5px;
+    height: 15px;
+    width: 14px;
+    border-radius: 4px;
+    border: solid 1px #b2b3b8;
+    background-color: transparent;
+}
+
+.event_box .container input:checked~.checkmark {
+    background-color: #e6eff2;
+    border-color: #e6eff2;
+    border-radius: 4px;
+}
+
+.modal_message_checkbox .event_box .container input:checked~.checkmark {
+    border-color: #36a2d9;
+    background-color: #36a2d9;
+}
+
+.event_box .container .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 9px;
+    border: solid #eb7100;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.modal_message_checkbox .event_box .container .checkmark:after {
+    border-color: #fff;
+}
+
+.event_check_box {
+    width: auto;
+    height: 18px;
+    margin-right: 24px;
+    margin-bottom: 7px;
+}
+
+.area_check_box {
+    width: auto;
+    height: 18px;
+    margin-bottom: 7px;
+}
+
+.event_check_box .container .check_name,
+.area_check_box .container .check_name {
+    width: auto;
+    height: 13px;
+    font-size: 12px;
+    text-align: left;
+    color: #f7f7f7;
+    margin: 1px 0 0 4px;
+    padding-left: 0;
+    position: relative;
+}
+
+.spread_check_box {
+    margin-bottom: 0;
+}
+
+.spread_check_box .container .check_name {
+    width: auto;
+    height: 24px;
+    font-family: "SCDreamR";
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.spread_check_box .checkmark {
+    height: 16px;
+    width: 15px;
+    top: 4px;
+}
+
+
+.confirm_mode .spread_check_box .container .check_name {
+    padding-left: 0;
+}

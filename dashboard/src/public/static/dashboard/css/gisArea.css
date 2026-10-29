@@ -1,0 +1,19 @@
+/*gisArea main style*/
+.gis_area {
+  width: 1083px;
+  height: 986px !important;
+  border-radius: 15px;
+  top: 48px;
+  left: 325px;
+}
+.gis_area .region_area {
+  top: 96px;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: none !important;
+  color: transparent !important;
+  box-shadow: none !important;
+}
+

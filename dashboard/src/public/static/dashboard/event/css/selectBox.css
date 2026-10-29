@@ -1,0 +1,280 @@
+/*selectBox style*/
+.selectric-wrapper {
+    margin: 0;
+}
+
+.selectric-select_time .selectric-items ul,
+.selectric-select_level .selectric-items ul,
+.selectric-select_broadcast .selectric-items ul {
+    padding: 0;
+}
+
+.selectric-select_time .button:after,
+.selectric-select_level .button:after,
+.selectric-select_broadcast .button:after {
+    border-top-color: transparent;
+    width: 0;
+    height: 0;
+    border: none;
+}
+
+.selectric-select_time .selectric-items .selectric-scroll,
+.selectric-select_level .selectric-items .selectric-scroll,
+.selectric-select_broadcast .selectric-items .selectric-scroll {
+    overflow-x: hidden;
+}
+
+/*select_time*/
+.selectric-wrapper.selectric-select_time .selectric {
+    margin-left: 4px;
+}
+
+.selectric-select_time .selectric {
+    width: 72px;
+    height: 31px;
+    font-family: "SCDreamR";
+    font-size: 11px;
+    text-align: left;
+    color: #fff;
+    border: solid 1px #4c5057;
+    background-color: #40434a;
+    border-radius: 6px;
+    padding-left: 0;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.selectric-select_time .selectric:hover {
+    border-color: #585d6b;
+    background-color: #4d5057;
+}
+
+.selectric-select_time.selectric-open .selectric {
+    border-color: #b55a14;
+    background-color: #1a1b21;
+}
+
+.selectric-select_time .selectric-items {
+    width: 72px !important;
+    max-height: 168px;
+    border-radius: 5px;
+    margin: 2px 0 0 0;
+    border: solid 1px #b55a14;;
+    background-color: #1a1b21;
+    padding: 6px 0 6px 6px;
+    margin-left: 4px;
+}
+
+.selectric-select_time .selectric-items .selectric-scroll{
+    width: 59px;
+    max-height: 152px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.selectric-select_time .selectric-items li {
+    padding-right: 6px;
+}
+
+.selectric-select_time .selectric-items li {
+    font-family: "SCDreamR";
+    font-size: 11px;
+    text-align: left;
+    color: #fff;
+    line-height: 30px;
+    border-radius: 4px;
+    padding: 0 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 52px;
+    height: 30px;
+}
+
+.selectric-select_time .selectric-items li:hover {
+    width: 52px;
+    height: 30px;
+    font-family: "SCDreamR";
+    font-size: 11px;
+    color: #fff;
+    background-color: rgba(252, 122, 35, 0.1);
+
+}
+
+.selectric-select_time .selectric-items li.selected,
+.selectric-select_time .selectric-items li.selected:hover {
+    width: 52px;
+    height: 30px;
+    font-family: "SCDreamR";
+    font-size: 11px;
+    color: #fc8905;
+    background-color: rgba(201, 109, 4, 0.25);
+}
+
+
+
+.selectric-select_time .selectric .label {
+    font-family: "SCDreamL";
+    font-size: 11px;
+    color: #fff;
+    text-align: left;
+    padding: 0 16px 0 12px;
+    line-height: 31px;
+    height: 31px;
+}
+
+.selectric-select_time .button {
+    width: 10px;
+    height: 9px;
+    background: url("../../../image/dark/page/main/img/img_arrow_dropdown.png") no-repeat;
+    background-size: 100%;
+    top: 12px;
+    right: 10px;
+}
+
+/*select_level*/
+/* .selectric-select_level .selectric {
+    width: 117px;
+    height: 34px;
+    font-family: "SCDreamR";
+    font-size: 13px;
+    text-align: left;
+    color: #fff;
+    border: solid 1px rgba(229, 249, 255, 0.2);
+    background-color: rgba(163, 194, 204, 0.1);
+    border-radius: 5px;
+    padding-left: 0;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.selectric-select_level .selectric:hover {
+    border: solid 1px rgba(119, 130, 255, 0.3);
+    background-color: rgba(178, 176, 225, 0.15);
+}
+
+.selectric-select_level.selectric-open .selectric {
+    border-color: rgba(110, 110, 240, 0.75);
+}
+
+.selectric-select_level .selectric-items {
+    width: 117px !important;
+    max-height: 149px;
+    border-radius: 6px;
+    margin: 2px 0 0 0;
+    border: solid 1px #6e6ef0;
+    background-color: #2a2b50;
+    padding: 6px 0 6px 6px;
+    overflow-y: scroll;
+}
+
+.selectric-select_level .selectric-items li {
+    font-family: "SCDreamR";
+    font-size: 13px;
+    text-align: left;
+    color: #fff;
+    line-height: 33px;
+    border-radius: 4px;
+    padding: 0 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 97px;
+    height: 33px;
+}
+
+.selectric-select_level .selectric-items li:hover {
+    width: 97px;
+    height: 33px;
+    font-family: "SCDreamR";
+    font-size: 13px;
+    color: #fff;
+    background-color: rgba(120, 113, 201, 0.1);
+}
+
+.selectric-select_level .selectric-items li.selected,
+.selectric-select_level .selectric-items li.selected:hover {
+    width: 97px;
+    height: 33px;
+    font-family: "SCDreamR";
+    font-size: 13px;
+    color: #7267ff;
+    background-color: rgba(70, 63, 146, 0.25);
+}
+
+.selectric-select_level .selectric .label {
+    font-family: "SCDreamL";
+    font-size: 13px;
+    color: #fff;
+    text-align: left;
+    padding: 0 16px 0 12px;
+    line-height: 34px;
+    height: 34px;
+} */
+
+.selectric-select_level .button {
+    width: 10px;
+    height: 9px;
+    background: url("../../../image/dark/page/main/img/img_arrow_dropdown.png") no-repeat;
+    background-size: 100%;
+    top: 12px;
+    right: 10px;
+}
+
+
+.selectric-select_level .select_level_icon{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    vertical-align: text-bottom;
+}
+
+.selectric-select_level .select_level_icon_attention{
+    background: url("../../../image/dark/page/event/img/img_event_class_1_attention.png") no-repeat;
+    background-size: 100%;
+}
+
+.selectric-select_level .select_level_icon_caution{
+    background: url("../../../image/dark/page/event/img/img_event_class_2_caution.png") no-repeat;
+    background-size: 100%;
+}
+
+.selectric-select_level .select_level_icon_alert{
+    background: url("../../../image/dark/page/event/img/img_event_class_3_alert.png") no-repeat;
+    background-size: 100%;
+}
+
+.selectric-select_level .select_level_icon_serious{
+    background: url("../../../image/dark/page/event/img/img_event_class_4_serious.png") no-repeat;
+    background-size: 100%;
+}
+
+
+/*selectric scroll style*/
+.selectric-select_time .selectric-items .selectric-scroll::-webkit-scrollbar,
+.selectric-select_level .selectric-items::-webkit-scrollbar{
+    background-color: transparent;
+    width: 4px;
+}
+
+.selectric-select_time .selectric-items .selectric-scroll::-webkit-scrollbar-track,
+.selectric-select_level .selectric-items::-webkit-scrollbar-track{
+    background-color: rgba(3, 4, 8, 0.5);
+}
+
+.selectric-select_time .selectric-items .selectric-scroll::-webkit-scrollbar-thumb,
+.selectric-select_level .selectric-items::-webkit-scrollbar-thumb{
+    background-color: #5e6266;
+    border-radius: 1px;
+}
+
+.selectric-select_time .selectric-items .selectric-scroll::-webkit-scrollbar-thumb:hover,
+.selectric-select_level .selectric-items::-webkit-scrollbar-thumb:hover{
+    background-color: #83898f;
+}
+
+
+

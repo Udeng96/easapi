@@ -1,0 +1,12 @@
+/*gisArea style*/
+.gis_area.event{
+  width: 853px;
+  height: 1061px !important;
+  border-radius: 10px;
+  top: 9px;
+  left: 564px;
+}
+
+.gis_area.event .region_area {
+  top: 12px;
+}
